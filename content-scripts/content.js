@@ -25,7 +25,7 @@ function setButtonEvents() {
 	    if (item.textContent.match(re1) || item.textContent.match(re2)) {
 		item.addEventListener('click', function() {
 		    console.log("mark new post with xuid "+xuid+" in 10 seconds...");
-		    setTimeout(() => {browser.runtime.sendMessage({from: "content", action: "markpost", "xuid": xuid, count: 1, cursor: null});},10000);
+		    setTimeout(() => {browser.runtime.sendMessage({from: "content", action: "markpost", "xuid": xuid, count: 2, cursor: null});},10000);
 		});
 		postButtonFound = true;
 		//console.log("added event listener for button");
