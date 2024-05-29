@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "Xmark",
+  "version": "1.2",
+
+  "description": "Mark your X activity to the BTM blockchain. Use the browser console to see what is being marked / has been marked.",
+
+  "icons": {
+    "128": "icons/bitmark-128.png"
+  },
+
+    "background": {
+	"scripts": ["background-scripts/background.js"],
+	"persistent": false,
+	"type": "module"
+    },
+
+  "content_scripts": [
+    {
+      "matches": ["*://x.com/*"],
+      "js": ["content-scripts/content.js"]
+    }
+  ],
+    "permissions": [
+	"tabs",
+	"cookies",
+	"<all_urls>",
+	"storage"
+    ]
+}
