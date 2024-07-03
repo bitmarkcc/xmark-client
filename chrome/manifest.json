@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Xmark",
-  "version": "1.3",
+  "version": "1.4",
   "description": "Mark your X/Twitter activity to the BTM blockchain. Use the browser console to see what is being marked / has been marked.",
   "icons": {
     "128": "icons/bitmark-128.png"
@@ -23,6 +23,6 @@
 	"storage"
     ],
     "host_permissions": [
-	"https://*/*"
+	"https://x.com/*"
     ]
 }
